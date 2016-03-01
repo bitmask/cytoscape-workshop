@@ -1,14 +1,26 @@
 # CBioVikings Workshop -- Introduction to biological networks in Cytoscape
 
-This exercise is designed for Cytoscape 3.3.0, and should work with earlier versions (with slight modifications to the import instructions). 
-
-Citation: Shannon, P., Markiel, A., Ozier, O., Baliga, N. S., Wang, J. T., Ramage, D., … Ideker, T. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res, 13(Karp 2001), 2498–2504. doi:10.1101/gr.1239303 
-http://genome.cshlp.org/content/13/11/2498.full
+## Introduction
 
 We are going to take a list of proteins that are associated with diabetes, and create a network with them, which we will investigate in cytoscape. We will overlay pancreas expression data onto the network, and make some observations about the proteins and processes involved in diabetes.  The network will come from STRING, so we will first download this data. 
 
 The following exercises contain some questions for you to answer,
 > and the answers are formatted like this.
+
+This exercise is designed for Cytoscape 3.3.0, and should work with earlier versions (with slight modifications to the import instructions). 
+
+Citation: Shannon, P., Markiel, A., Ozier, O., Baliga, N. S., Wang, J. T., Ramage, D., … Ideker, T. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res, 13(Karp 2001), 2498–2504. doi:10.1101/gr.1239303 
+http://genome.cshlp.org/content/13/11/2498.full
+
+## Prerequisites
+
+Please install:
+* Cytoscape 3.3.0
+* Java if not already installed on your system
+* The ClusterMaker2 Cytoscape app
+* The BiNGO Cytoscape app
+
+Cytoscape apps can be installed through Cytoscape under the menu option Apps -> App Manager
 
 ## 0.1. Query STRING for a single protein
 
