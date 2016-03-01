@@ -2,7 +2,8 @@
 
 This exercise is designed for Cytoscape 3.3.0, and should work with earlier versions (with slight modifications to the import instructions). 
 
-Citation: Shannon, P., Markiel, A., Ozier, O., Baliga, N. S., Wang, J. T., Ramage, D., … Ideker, T. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res, 13(Karp 2001), 2498–2504. doi:10.1101/gr.1239303 http://genome.cshlp.org/content/13/11/2498.full
+Citation: Shannon, P., Markiel, A., Ozier, O., Baliga, N. S., Wang, J. T., Ramage, D., … Ideker, T. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res, 13(Karp 2001), 2498–2504. doi:10.1101/gr.1239303 
+http://genome.cshlp.org/content/13/11/2498.full
 
 We are going to take a list of proteins that are associated with diabetes, and create a network with them, which we will investigate in cytoscape. We will overlay pancreas expression data onto the network, and make some observations about the proteins and processes involved in diabetes.  The network will come from STRING, so we will first download this data. 
 
@@ -15,7 +16,8 @@ STRING is a database of known and predicted protein interactions. The interactio
 
 Go to http://string-db.org/ and query for human insulin receptor (INSR) using the search by name functionality. This will return a network of interaction partners for the insulin receptor in human.  Nodes are connected by different types of evidence, which you can investigate further down on the page.  
 
-Citation: Szklarczyk, D., Franceschini, A., Wyder, S., Forslund, K., Heller, D., Huerta-Cepas, J., … Von Mering, C. (2015). STRING v10: Protein-protein interaction networks, integrated over the tree of life. Nucleic Acids Research, 43(D1), D447–D452. doi:10.1093/nar/gku1003 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4383874/
+Citation: Szklarczyk, D., Franceschini, A., Wyder, S., Forslund, K., Heller, D., Huerta-Cepas, J., … Von Mering, C. (2015). STRING v10: Protein-protein interaction networks, integrated over the tree of life. Nucleic Acids Research, 43(D1), D447–D452. doi:10.1093/nar/gku1003 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4383874/
 
 ## 0.2. Query STRING for multiple proteins
 
