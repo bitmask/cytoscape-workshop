@@ -1,5 +1,8 @@
-# cytoscape-workshop
-CBioVikings Workshop -- Introduction to biological networks in Cytoscape
+# CBioVikings Workshop -- Introduction to biological networks in Cytoscape
+
+This exercise is designed for Cytoscape 3.3.0, and should work with earlier versions (with slight modifications to the import instructions). 
+
+Citation: Shannon, P., Markiel, A., Ozier, O., Baliga, N. S., Wang, J. T., Ramage, D., … Ideker, T. (2003). Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res, 13(Karp 2001), 2498–2504. doi:10.1101/gr.1239303 http://genome.cshlp.org/content/13/11/2498.full
 
 We are going to take a list of proteins that are associated with diabetes, and create a network with them, which we will investigate in cytoscape. We will overlay pancreas expression data onto the network, and make some observations about the proteins and processes involved in diabetes.  The network will come from STRING, so we will first download this data. 
 
@@ -8,9 +11,7 @@ The following exercises contain some questions for you to answer,
 
 ## 0.1. Query STRING for a single protein
 
-
 STRING is a database of known and predicted protein interactions. The interactions include direct (physical) and indirect (functional) associations; they are derived from four sources: Genomic Context, High-throughput Experiments, (Conserved) Coexpression and Previous Knowledge.  STRING quantitatively integrates interaction data from these sources for a large number of organisms, and transfers information between these organisms where applicable. The database currently covers 9,643,763 proteins from 2,031 organisms.
-
 
 Go to http://string-db.org/ and query for human insulin receptor (INSR) using the search by name functionality. This will return a network of interaction partners for the insulin receptor in human.  Nodes are connected by different types of evidence, which you can investigate further down on the page.  
 
@@ -19,6 +20,8 @@ Citation: Szklarczyk, D., Franceschini, A., Wyder, S., Forslund, K., Heller, D.,
 ## 0.2. Query STRING for multiple proteins
 
 In addition to providing interaction partners for a protein of interest, STRING is also commonly used to obtain a network for a set of proteins of interest. In this question, we will generate a diabetes protein network, which will also be used in the subsequent Cytoscape exercise. To this end we provide you with this file: diabetes.txt, which contains 287 proteins associated with diabetes mellitus according to the DISEASES database (http://diseases.jensenlab.org).
+
+Citation: Pletscher-Frankild, S., Pallej??, A., Tsafou, K., Binder, J. X., & Jensen, L. J. (2015). DISEASES: Text mining and data integration of disease-gene associations. Methods, 74, 83–89. doi:10.1016/j.ymeth.2014.11.020 http://www.sciencedirect.com/science/article/pii/S1046202314003831
 
 Return to the front page of STRING and go to the multiple names tab. Either paste in the list of identifiers of diabetes proteins, or upload the file via the web interface. To speed up the query for this many proteins, you may want to specify that these are human proteins instead of relying on the species to be automatically detected.
 
@@ -53,6 +56,8 @@ Cytoscape provides several visualization options under the Layout menu.  Experim
 We are going to overlay information about which tissues the proteins are expressed in onto the network.  This data comes from the Tissues database, which we will take a look at first to better understand the data.
 
 Go to http://tissues.jensenlab.org/ and enter insulin (gene name: INS) into the search box.  The resulting page will show you an overall representation of where in the body insulin is located, and below you can see tables containing the specific lines of evidence that contribute to the overall score.  
+
+Citation: Santos, A., Tsafou, K., Stolte, C., Pletscher-Frankild, S., O’Donoghue, S. I., & Jensen, L. J. (2015). Comprehensive comparison of large-scale tissue expression datasets. PeerJ, 3, e1054. doi:10.7717/peerj.1054 https://peerj.com/articles/1054/
 
 What tissues is insulin present in with a confidence of 4 or above?  What source do these interactions come from?
 
